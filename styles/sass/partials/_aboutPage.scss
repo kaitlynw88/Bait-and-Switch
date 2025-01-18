@@ -33,6 +33,34 @@
 
 
 @media(max-width:900px){
+
+    .hero {
+            flex-direction: column;
+            position: relative;
+    
+            img {
+                width: 98%;
+                height: 80vh;
+            }
+    
+            div {
+                width: auto;
+                margin-right: 0;
+    
+                h1 {
+                    font-size: 3.5rem;
+                }
+    
+                h3 {
+                    margin-top: 1.5rem;
+                }
+            }
+        }
+    
+        .formContainer {
+            position: absolute;
+            margin-left: 1rem;
+        }
     .aboutContainer {
             h3 {
                 font-size: 1.5rem;

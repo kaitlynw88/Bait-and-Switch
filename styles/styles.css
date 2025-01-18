@@ -389,33 +389,6 @@ form button:hover, form button:focus {
   margin-bottom: 1.5rem;
 }
 
-@media (max-width: 900px) {
-  .hero {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    position: relative;
-  }
-  .hero img {
-    width: 98%;
-    height: 80vh;
-  }
-  .hero div {
-    width: auto;
-    margin-right: 0;
-  }
-  .hero div h1 {
-    font-size: 3.5rem;
-  }
-  .hero div h3 {
-    margin-top: 1.5rem;
-  }
-  .formContainer {
-    position: absolute;
-    margin-left: 1rem;
-  }
-}
 .about {
   min-height: 80vh;
 }
@@ -457,6 +430,31 @@ form button:hover, form button:focus {
 }
 
 @media (max-width: 900px) {
+  .hero {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+  }
+  .hero img {
+    width: 98%;
+    height: 80vh;
+  }
+  .hero div {
+    width: auto;
+    margin-right: 0;
+  }
+  .hero div h1 {
+    font-size: 3.5rem;
+  }
+  .hero div h3 {
+    margin-top: 1.5rem;
+  }
+  .formContainer {
+    position: absolute;
+    margin-left: 1rem;
+  }
   .aboutContainer h3 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
