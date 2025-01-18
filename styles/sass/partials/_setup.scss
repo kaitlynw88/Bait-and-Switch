@@ -6,7 +6,38 @@ html { box-sizing: border-box;}
 
 .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
 
-.wrappper{
-    width:100%;
-    max-width: 1080px;
+
+body {
+    background-color: #E0E2DB;
+    color: #38413f;
+}
+
+* {
+    font-family: "Prata", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.wrapper{
+    width: 98%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+ul li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+
+h1, h2, h3, h4{
+    margin:0;
+    padding:0;
+}
+
+footer{
+    text-align: center;
+    border-top:1px solid #38413f;
+    margin-top: 10px;
 }

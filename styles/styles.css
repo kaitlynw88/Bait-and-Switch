@@ -226,7 +226,255 @@ html {
   overflow: hidden;
 }
 
-.wrappper {
+body {
+  background-color: #E0E2DB;
+  color: #38413f;
+}
+
+* {
+  font-family: "Prata", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.wrapper {
+  width: 98%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4 {
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  text-align: center;
+  border-top: 1px solid #38413f;
+  margin-top: 10px;
+}
+
+h1 {
+  font-family: "Prata", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+header {
+  border-bottom: 1px solid #38413f;
+  margin-bottom: 10px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+nav ul {
+  width: 300px;
+  height: 6vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+nav ul li {
+  font-size: 1.5rem;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  border-bottom: 1px solid #E0E2DB;
+}
+nav ul li:hover, nav ul li:focus {
+  border-bottom: 1px solid #38413f;
+}
+nav ul li a {
+  color: #38413f;
+}
+
+.fa-instagram {
+  font-size: 2rem;
+}
+
+.formContainer {
+  margin-left: 50px;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 300px;
+}
+form input, form button {
   width: 100%;
-  max-width: 1080px;
+}
+form input {
+  padding: 2px 10px;
+  margin-bottom: 4px;
+}
+form textarea {
+  resize: none;
+  width: 100%;
+}
+form button {
+  margin-top: 8px;
+  background-color: #889696;
+  color: #38413f;
+  padding: 10px 20px;
+  font-size: 1.5rem;
+  border-radius: 1rem;
+  border: none;
+  font-family: "Prata", serif;
+  font-weight: bold;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+form button:hover, form button:focus {
+  color: #38413f;
+  background-color: #B8BDB5;
+  -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+          box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+.hero img {
+  width: 60%;
+  height: 80vh;
+}
+.hero div {
+  width: 40%;
+  margin-right: 2rem;
+}
+.hero div h1 {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+.hero div h3 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 900px) {
+  .hero {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+  }
+  .hero img {
+    width: 98%;
+    height: 80vh;
+  }
+  .hero div {
+    width: auto;
+    margin-right: 0;
+  }
+  .hero div h1 {
+    font-size: 3.5rem;
+  }
+  .hero div h3 {
+    margin-top: 1.5rem;
+  }
+  .formContainer {
+    position: absolute;
+    margin-left: 1rem;
+  }
+}
+.about {
+  min-height: 80vh;
+}
+
+.title {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+
+.aboutContainer h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+.aboutContainer .imageContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.aboutContainer .imageContainer .image {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 1.4rem;
+}
+.aboutContainer .imageContainer p {
+  text-wrap: wrap;
+  width: 50%;
+  margin-left: 2rem;
+}
+
+@media (max-width: 900px) {
+  .aboutContainer h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+  .aboutContainer .imageContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .aboutContainer .imageContainer .image {
+    width: 80%;
+  }
+  .aboutContainer .imageContainer p {
+    width: 80%;
+  }
 }

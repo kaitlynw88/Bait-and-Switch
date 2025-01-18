@@ -1,42 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Google Fonts stuff -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Cutive+Mono&family=Prata&family=Special+Elite&display=swap"
+    rel="stylesheet">
+  <!-- font Awesome Stuff -->
+    <script src="https://kit.fontawesome.com/98f3a36dcd.js" crossorigin="anonymous"></script>
+
     <meta charset="UTF-8">
     <meta name="description" content="Bait and Switch Theatre Company, based in Toronto Ontario Canada">
     <meta name="keywords" content="Toronto, Theatre, Fringe Production">
     <meta name="author" content="Bait and Switch">
     <title>Bait and Switch</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
   <header>
-    <nav>
-      <h1>
-        Bait and Switch
-      </h1>
-      <ul>
-        <li>
-          About Us
-        </li>
-        <li>
-          Current Plays
-        </li>
-        <li>
-          Contact Us.
-        </li>
-      </ul>
-    </nav>
+    <div class="wrapper">
+      <nav>
+        <ul>
+          <li class="links">
+            <a href="./index.html">
+              Home
+            </a>
+          </li>
+          <li class="links">
+            <a href="./about.html">
+              About Us
+            </a>
+          </li>
+          <li class="links">
+            <a href="https://www.instagram.com/fringeoasia/" target="_blank">
+              <i class="fa-brands fa-instagram"></i>
+              <span class="sr-only">link to instagram</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
-    <section>
-      <form action="">
-        <label for="">Contact Us</label>
-        <input type="text" name="firstName" placeholder="First Name">
-        <input type="text" name="lastName" placeholder="Last Name">
-        <input type="email" name="email" placeholder="example@email.com">
-      </form>
-    </section>
+
+  <section>
+    <div class="wrapper">
+      <div class="hero">
+        <div class="heroTitle">
+          <h1>
+            Bait and Switch
+          </h1>
+          <div class="formContainer">
+            <h3>
+              Get in touch
+            </h3>
+            <form action="">
+              <input type="text" name="firstName" placeholder="First Name">
+              <input type="text" name="lastName" placeholder="Last Name">
+              <input type="email" name="email" placeholder="example@email.com">
+              <textarea name="message" id="userMessage" cols="30" rows="10"></textarea>
+              <button class="button">Submit</button </form>
+          </div>
+        </div>
+        <img src="./assets/SmithFarm.jpg" alt="On a Sunday In August Playbill">
+      </div>
+    </div>
+  </section>
+    
   <footer>
-    <p>Bait and Switch 2024</p>
+    <p>Bait and Switch 2025</p>
   </footer>
 </body>
 </html>
